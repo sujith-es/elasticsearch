@@ -1,6 +1,12 @@
 package main;
 
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
+
 import org.elasticsearch.ElasticsearchSecurityException;
+import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexResponse;
@@ -13,6 +19,8 @@ import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static org.elasticsearch.common.xcontent.XContentFactory.*;
 
 public class ElastiSearchService {
 
@@ -133,6 +141,39 @@ public class ElastiSearchService {
 		}
 
 		return null;
+
+	}
+
+	public void bulkInsert() throws IOException {
+		
+		//TODO: should remove below hard coding and pass List<T>
+
+		BulkRequestBuilder bulkRequest = ElasticSearchUtil.getClient()
+				.prepareBulk();
+
+		// either use client#prepare, or use Requests# to directly build
+		// index/delete requests
+		bulkRequest.add(ElasticSearchUtil
+				.getClient()
+				.prepareIndex("twitter", "tweet", "1")
+				.setSource(
+						jsonBuilder().startObject().field("user", "sujith")
+								.field("postDate", new Date())
+								.field("message", "trying out Elasticsearch")
+								.endObject()));
+
+		bulkRequest.add(ElasticSearchUtil
+				.getClient()
+				.prepareIndex("twitter", "tweet", "2")
+				.setSource(
+						jsonBuilder().startObject().field("user", "hima")
+								.field("postDate", new Date())
+								.field("message", "another post").endObject()));
+
+		BulkResponse bulkResponse = bulkRequest.get();
+		if (bulkResponse.hasFailures()) {
+			// process failures by iterating through each bulk response item
+		}
 
 	}
 }

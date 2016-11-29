@@ -63,6 +63,8 @@ public class ElasticSearchCRUDTest extends BaseTest {
 		Assert.assertSame(response.isExists(), true);
 	}
 
+	
+
 	@Test(enabled = true, priority = 3)
 	public void findDocument() {
 
@@ -107,6 +109,32 @@ public class ElasticSearchCRUDTest extends BaseTest {
 	public void removeDocument() {
 		DeleteResponse response = elasticSearchService.removeDocument("users",
 				"user", "1");
+		Assert.assertSame(response.isFound(), true);
+	}
+	
+	@Test(enabled = true, priority = 6)
+	public void bulkInsert() throws IOException {
+		elasticSearchService.bulkInsert();
+
+		GetResponse response = elasticSearchService.findDocumentByIndex(
+				"twitter", "tweet", "1");
+		Map<String, Object> source = response.getSource();
+
+		System.out.println("------------------------------");
+		System.out.println("Index:	" + response.getIndex());
+		System.out.println("Type:	" + response.getType());
+		System.out.println("Id:	" + response.getId());
+		System.out.println("version:	" + response.getVersion());
+		System.out.println("getFields:	" + response.getFields());
+		System.out.println(source);
+		System.out.println("------------------------------");
+		Assert.assertSame(response.isExists(), true);
+
+	}
+	@Test(enabled = true, priority = 7)
+	public void removeTweetedDocument() {
+		DeleteResponse response = elasticSearchService.removeDocument("twitter",
+				"tweet", "1");
 		Assert.assertSame(response.isFound(), true);
 	}
 

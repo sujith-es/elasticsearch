@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5482" started-at="2016-11-29T15:54:41Z" finished-at="2016-11-29T15:54:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5482" started-at="2016-11-29T15:54:41Z" finished-at="2016-11-29T15:54:47Z">
+      <class name="test.ElasticSearchCRUDTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="init" is-config="true" duration-ms="65" started-at="2016-11-29T21:24:41Z" finished-at="2016-11-29T21:24:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="createIndex()[pri:1, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="createIndex" duration-ms="2871" started-at="2016-11-29T21:24:41Z" finished-at="2016-11-29T21:24:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createIndex -->
+        <test-method status="PASS" signature="findDocumentByIndex()[pri:2, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocumentByIndex" duration-ms="112" started-at="2016-11-29T21:24:44Z" finished-at="2016-11-29T21:24:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findDocumentByIndex -->
+        <test-method status="PASS" signature="findDocument()[pri:3, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocument" duration-ms="93" started-at="2016-11-29T21:24:44Z" finished-at="2016-11-29T21:24:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findDocument -->
+        <test-method status="PASS" signature="updateDocument()[pri:4, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="updateDocument" duration-ms="2219" started-at="2016-11-29T21:24:44Z" finished-at="2016-11-29T21:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDocument -->
+        <test-method status="PASS" signature="removeDocument()[pri:5, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="removeDocument" duration-ms="101" started-at="2016-11-29T21:24:47Z" finished-at="2016-11-29T21:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDocument -->
+      </class> <!-- test.ElasticSearchCRUDTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

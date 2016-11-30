@@ -1,4 +1,4 @@
-package main;
+package com.CRUD;
 
 import java.util.List;
 

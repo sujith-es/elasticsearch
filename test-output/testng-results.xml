@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5649" started-at="2016-11-29T16:51:40Z" finished-at="2016-11-29T16:51:45Z">
+  <suite name="Default suite" duration-ms="6597" started-at="2016-11-30T09:53:15Z" finished-at="2016-11-30T09:53:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5649" started-at="2016-11-29T16:51:40Z" finished-at="2016-11-29T16:51:45Z">
+    <test name="Default test" duration-ms="6597" started-at="2016-11-30T09:53:15Z" finished-at="2016-11-30T09:53:21Z">
       <class name="test.ElasticSearchCRUDTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="init" is-config="true" duration-ms="24" started-at="2016-11-29T22:21:40Z" finished-at="2016-11-29T22:21:40Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="init" is-config="true" duration-ms="39" started-at="2016-11-30T15:23:15Z" finished-at="2016-11-30T15:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="createIndex()[pri:1, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="createIndex" duration-ms="2723" started-at="2016-11-29T22:21:40Z" finished-at="2016-11-29T22:21:42Z">
+        <test-method status="PASS" signature="createIndex()[pri:1, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="createIndex" duration-ms="3119" started-at="2016-11-30T15:23:15Z" finished-at="2016-11-30T15:23:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIndex -->
-        <test-method status="PASS" signature="findDocumentByIndex()[pri:2, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocumentByIndex" duration-ms="82" started-at="2016-11-29T22:21:42Z" finished-at="2016-11-29T22:21:43Z">
+        <test-method status="PASS" signature="findDocumentByIndex()[pri:2, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocumentByIndex" duration-ms="109" started-at="2016-11-30T15:23:18Z" finished-at="2016-11-30T15:23:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findDocumentByIndex -->
-        <test-method status="PASS" signature="findDocument()[pri:3, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocument" duration-ms="75" started-at="2016-11-29T22:21:43Z" finished-at="2016-11-29T22:21:43Z">
+        <test-method status="PASS" signature="findDocument()[pri:3, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="findDocument" duration-ms="84" started-at="2016-11-30T15:23:18Z" finished-at="2016-11-30T15:23:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findDocument -->
-        <test-method status="PASS" signature="updateDocument()[pri:4, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="updateDocument" duration-ms="2213" started-at="2016-11-29T22:21:43Z" finished-at="2016-11-29T22:21:45Z">
+        <test-method status="PASS" signature="updateDocument()[pri:4, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="updateDocument" duration-ms="2393" started-at="2016-11-30T15:23:18Z" finished-at="2016-11-30T15:23:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDocument -->
-        <test-method status="PASS" signature="removeDocument()[pri:5, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="removeDocument" duration-ms="70" started-at="2016-11-29T22:21:45Z" finished-at="2016-11-29T22:21:45Z">
+        <test-method status="PASS" signature="removeDocument()[pri:5, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="removeDocument" duration-ms="104" started-at="2016-11-30T15:23:20Z" finished-at="2016-11-30T15:23:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeDocument -->
-        <test-method status="PASS" signature="bulkInsert()[pri:6, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="bulkInsert" duration-ms="363" started-at="2016-11-29T22:21:45Z" finished-at="2016-11-29T22:21:45Z">
+        <test-method status="PASS" signature="bulkInsert()[pri:6, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="bulkInsert" duration-ms="679" started-at="2016-11-30T15:23:21Z" finished-at="2016-11-30T15:23:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bulkInsert -->
-        <test-method status="PASS" signature="removeTweetedDocument()[pri:7, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="removeTweetedDocument" duration-ms="59" started-at="2016-11-29T22:21:45Z" finished-at="2016-11-29T22:21:45Z">
+        <test-method status="PASS" signature="removeTweetedDocument()[pri:7, instance:test.ElasticSearchCRUDTest@8bd1b6a]" name="removeTweetedDocument" duration-ms="42" started-at="2016-11-30T15:23:21Z" finished-at="2016-11-30T15:23:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeTweetedDocument -->

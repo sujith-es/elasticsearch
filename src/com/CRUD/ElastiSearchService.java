@@ -1,9 +1,7 @@
-package main;
+package com.CRUD;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
-
 import org.elasticsearch.ElasticsearchSecurityException;
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;

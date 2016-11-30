@@ -1,4 +1,4 @@
-package main;
+package com.CRUD;
 
 public interface ElasticConstants {
 

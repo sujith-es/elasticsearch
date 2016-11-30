@@ -3,11 +3,11 @@ package main;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.client.Client;
 
-public class IndicesOperations {
+public class _02AdminIndicesOperations {
 
 	private final Client client;
 
-	public IndicesOperations(Client client) {
+	public _02AdminIndicesOperations(Client client) {
 		this.client = client;
 	}
 
